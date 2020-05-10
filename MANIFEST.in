@@ -1,0 +1,2 @@
+include splunkconnector/test/*.json
+include splunkconnector/errors/*.json

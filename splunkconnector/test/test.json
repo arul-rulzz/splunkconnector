@@ -1,0 +1,133 @@
+{
+    "data": {
+        "json_data": [
+            {
+                "sourcetype": "splunkd",
+                "count": "198046",
+                "percent": "94.481285",
+                "_tc": "209614"
+            },
+            {
+                "sourcetype": "splunkd_ui_access",
+                "count": "8563",
+                "percent": "4.085128",
+                "_tc": "209614"
+            },
+            {
+                "sourcetype": "splunkd_access",
+                "count": "1539",
+                "percent": "0.734207",
+                "_tc": "209614"
+            },
+            {
+                "sourcetype": "splunk_web_service",
+                "count": "747",
+                "percent": "0.356369",
+                "_tc": "209614"
+            },
+            {
+                "sourcetype": "splunk_web_access",
+                "count": "308",
+                "percent": "0.146937",
+                "_tc": "209614"
+            },
+            {
+                "sourcetype": "mongod",
+                "count": "265",
+                "percent": "0.126423",
+                "_tc": "209614"
+            },
+            {
+                "sourcetype": "splunk_pdfgen",
+                "count": "67",
+                "percent": "0.031964",
+                "_tc": "209614"
+            },
+            {
+                "sourcetype": "splunk_python",
+                "count": "47",
+                "percent": "0.022422",
+                "_tc": "209614"
+            },
+            {
+                "sourcetype": "scheduler",
+                "count": "17",
+                "percent": "0.008110",
+                "_tc": "209614"
+            },
+            {
+                "sourcetype": "splunk_archiver-too_small",
+                "count": "11",
+                "percent": "0.005248",
+                "_tc": "209614"
+            },
+            {
+                "sourcetype": "splunkd",
+                "count": "537029",
+                "percent": "96.917574",
+                "_tc": "554109"
+            },
+            {
+                "sourcetype": "splunkd_ui_access",
+                "count": "11592",
+                "percent": "2.092007",
+                "_tc": "554109"
+            },
+            {
+                "sourcetype": "splunkd_access",
+                "count": "2767",
+                "percent": "0.499360",
+                "_tc": "554109"
+            },
+            {
+                "sourcetype": "splunk_web_service",
+                "count": "1441",
+                "percent": "0.260057",
+                "_tc": "554109"
+            },
+            {
+                "sourcetype": "splunk_web_access",
+                "count": "550",
+                "percent": "0.099258",
+                "_tc": "554109"
+            },
+            {
+                "sourcetype": "mongod",
+                "count": "527",
+                "percent": "0.095108",
+                "_tc": "554109"
+            },
+            {
+                "sourcetype": "splunk_pdfgen",
+                "count": "67",
+                "percent": "0.012091",
+                "_tc": "554109"
+            },
+            {
+                "sourcetype": "scheduler",
+                "count": "48",
+                "percent": "0.008663",
+                "_tc": "554109"
+            },
+            {
+                "sourcetype": "splunk_python",
+                "count": "47",
+                "percent": "0.008482",
+                "_tc": "554109"
+            },
+            {
+                "sourcetype": "splunk_archiver-too_small",
+                "count": "30",
+                "percent": "0.005414",
+                "_tc": "554109"
+            }
+        ],
+        "message_data": [
+            "DEBUG: Configuration initialization for /home/centos/splunk/etc took 10ms when dispatching a search (search ID: 1589036939.127)",
+            "DEBUG: The \"sendemail\" command is implemented as an external script and may cause the search to be significantly slower.",
+            "DEBUG: base lispy: [ AND index: :_internal]",
+            "DEBUG: search context: user=\"admin\", app=\"search\", bs-pathname=\"/home/centos/splunk/etc\"",
+            "ERROR: command=\"sendemail\",[Errno 110] Connection timed out while sending mail to: arulpandiyan2288@gmail.com"
+        ]
+    }
+}

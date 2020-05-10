@@ -1,0 +1,9 @@
+{
+    "en-US": {
+        "errors.email.validate": "Not a valid email",
+        "errors.emails.validate": "Not a valid emails",
+        "errors.time.validate": "Not a valid time",
+        "errors.empty.common.msg": " cannot be empty",
+        "errors.common.excpetion": " cannot be empty"
+    }
+}
