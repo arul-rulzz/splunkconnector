@@ -15,6 +15,12 @@ with open(error_file_path, encoding='utf-8') as file_data:
     error_dict = json.loads(file_data.read())
 
 
+def __geterrormsg(key, lang="en-US"):
+    if dict(error_dict) and lang in error_dict and key in error_dict[lang]:
+        return error_dict[lang][key]
+    return ""
+
+
 def __getvalidkwargsfromrequest(**kwargs):
     newkwargs = {}
     if kwargs:
@@ -84,4 +90,4 @@ def __getvalidemails(emails):
 
 def __fill_error(error_data, val, key):
     if not __isnotempty(val):
-        error_data.append({key: key+error_dict["errors.empty.common.msg"]})
+        error_data.append({key: key+__geterrormsg("errors.empty.common.msg")})
