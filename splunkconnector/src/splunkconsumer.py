@@ -7,7 +7,7 @@ from dateutil.parser import parse
 import json
 from splunkconnector.utils import validateutils
 import os
-import test
+import splunkconnector.test as test
 
 
 test_file_path = os.path.join(os.path.dirname(test
@@ -43,14 +43,20 @@ def getsplunkdata(host, portnumber, username, password, searchquery, email_ids=N
     :type ismockcall: ``boolean``
     :param `**kwargs`: splunk required params to connect the client
     :type ismockcall: ``tuple``
+    **Example**::
+
+        import splunkconnector.src as splunkconsumer
+        s = splunkconsumer.getsplunkdata(...)
+        ...
     """
+
     isvaliddata, errors = validateutils.__isvaliddata(
         host, portnumber, username, password)
     if not isvaliddata:
         return {"errors": errors}
 
     if ismockcall:
-        return mock_dict
+        return mock_dict['data']
 
     try:  # Without throwing error, we are going to return the error
 

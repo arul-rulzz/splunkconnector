@@ -4,16 +4,15 @@ import datetime
 from dateutil.parser import parse
 import os
 
-import errors
-import test
+import splunkconnector.errors as errors
 
 error_file_path = os.path.join(os.path.dirname(errors
                                                .__file__), 'error.json')
 
+
 error_dict = dict()
 with open(error_file_path, encoding='utf-8') as file_data:
     error_dict = json.loads(file_data.read())
-
 
 
 def __getvalidkwargsfromrequest(**kwargs):

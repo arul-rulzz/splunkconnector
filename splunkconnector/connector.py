@@ -15,7 +15,7 @@ def main(argv):
     email = ''
     file_path = ''
     query = ''
-    args = None
+    splunkargs = {}
     try:
         opts, args = getopt.getopt(
             argv, "H:P:u:p:e:f:q", ["host=", "port=", "username=", "password=", "email=", "file=", "query="])
@@ -69,7 +69,7 @@ def main(argv):
                 if "query" in connector_data and connector_data['query']:
                     query = connector_data['query']
                     del connector_data['query']
-                args = connector_data
+                splunkargs = connector_data
 
         except OSError:
             print("Not a valid file path")
@@ -95,10 +95,8 @@ def main(argv):
     if email and ',' in email:
         email = email.split(",")
 
-    print("args :", args)
-
     splunkdata = splunkconsumer.getsplunkdata(
-        host, port, username, password, query, ismockcall=True, **args)
+        host, port, username, password, query, ismockcall=True, **splunkargs)
 
     print("splunkdata :", splunkdata)
 
