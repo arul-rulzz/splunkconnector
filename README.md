@@ -1,4 +1,4 @@
-# Splunk connector Client Library
+# Splunk connector Library
 
 You can use this library for consume data from splunk directly by making server calls instead of webcall. After that you can play around your data.
 
