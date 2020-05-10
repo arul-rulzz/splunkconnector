@@ -8,4 +8,5 @@ setup(
     package_data={
         'errors': ['*.json'],
         'test': ['*.json']
-    })
+    },
+    install_requires=['splunk-sdk'])
