@@ -96,7 +96,7 @@ def main(argv):
         email = email.split(",")
 
     splunkdata = splunkconsumer.getsplunkdata(
-        host, port, username, password, query, ismockcall=True, **splunkargs)
+        host, port, username, password, query, ismockcall=False, **splunkargs)
 
     print("splunkdata :", splunkdata)
 
