@@ -4,8 +4,7 @@ setup(
     name='splunkconnector',
     version='1.0.0',
     include_package_data=True,
-    packages=['splunkconnector', 'splunkconnector.src', 'splunkconnector.utils',
-              'splunkconnector.errors', 'splunkconnector.test'],
+    packages=['splunkconnector'],
     package_data={
         'errors': ['*.json'],
         'test': ['*.json']
