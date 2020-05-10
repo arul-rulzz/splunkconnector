@@ -71,9 +71,10 @@ def getsplunkdata(host, portnumber, username, password, searchquery, email_ids=N
         emails, email_id_format_errors = validateutils.__getvalidemails(
             email_ids)
         if len(email_id_format_errors) > 0:
-            error_msg = validateutils.error_dict["errors.email.validate"]
+            error_msg = validateutils.__geterrormsg("errors.email.validate")
             if len(email_id_format_errors) > 1:
-                error_msg = validateutils.error_dict["errors.emails.validate"]
+                error_msg = validateutils.__geterrormsg(
+                    "errors.emails.validate")
             return {"errors": error_msg+",".join(email_id_format_errors)}
 
         if len(emails) > 0:
@@ -112,4 +113,4 @@ def getsplunkdata(host, portnumber, username, password, searchquery, email_ids=N
         return {"json_data": resultsetasdict,
                 "message_data": resultsetasmessage}
     except BaseException as error:
-        return {"error": (validateutils.error_dict["errors.common.excpetion"]+' {}'.format(error))}
+        return {"error": (validateutils.__geterrormsg("errors.common.excpetion")+' {}'.format(error))}
