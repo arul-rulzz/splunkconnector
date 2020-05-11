@@ -26,6 +26,19 @@ You can use this library for consume data from splunk directly by making server 
   s = splunkconsumer.getsplunkdata(...)
 ```
 
+### Output
+
+```sh
+ {
+    "json_data":[],
+    "message_data":[]
+ }
+ 
+ - json_data : result from the splunk server as json
+ - message_data : messages(logs) from query execution
+ 
+```
+
 ### Arguments(both commandline and method arguments):
 
 ```sh
@@ -49,7 +62,7 @@ emails : email ids which going to get output data
     "query": <query>,
     "email": <email>,
     "output_mode": <output_mode>"
-    ...
+    kwargs...
 }
 ```
 
