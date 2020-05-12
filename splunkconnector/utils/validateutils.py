@@ -58,7 +58,7 @@ def __isnoneempty(values):
         for val in values:
             if not __isnotempty(val):
                 return False
-    return False
+    return True
 
 
 def __isvaliddata(host, portnumber, username, password):
