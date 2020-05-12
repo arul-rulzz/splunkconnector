@@ -12,12 +12,12 @@ You can use this library for consume data from splunk directly by making server 
   - ex  : file -
 ```sh
   cd splunkconnector
-  python connector.py connector.py -f <filepath>
+  python connector.py -f <filepath>
 ```
   - ex  : cmds - 
 ```sh
   cd splunkconnector
-  python connector.py connector.py -H <host>  -P <port> -u <username> -p <password> -q <searchquery> -email <emails>
+  python connector.py -H <host>  -P <port> -u <username> -p <password> -q <searchquery> -email <emails>
 ```
   - Or you can access the data by the given method getsplunkdata in your python code like below.
 
